@@ -11,7 +11,7 @@ root.title(".docx to .html converter")
 
 
 def open_file():
-    word_file = filedialog.askopenfilename(initialdir='C:\\Users\\jiri.svab\\Desktop\\Requests\\Byrne-Michelle')
+    word_file = filedialog.askopenfilename(initialdir='C:\\Users\\jiri.svab\\Desktop')
     output = pypandoc.convert_file(word_file, 'html', outputfile='test2_html.html')
 
 
