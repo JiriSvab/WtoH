@@ -9,9 +9,8 @@ from tkinter import messagebox
 root = tk.Tk()
 root.title(".docx to .html converter")
 
-
 def open_file():
-    word_file = filedialog.askopenfilename(initialdir='C:\\Users\\jiri.svab\\Desktop')
+    word_file = filedialog.askopenfilename(initialdir=os.getcwd())
     output = pypandoc.convert_file(word_file, 'html', outputfile='test2_html.html')
 
 
